@@ -168,6 +168,12 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brand-accen
 .site-footer .logo__text { color: #fff; }
 .footer-bottom { margin-top: 50px; border-top: 1px solid rgba(255,255,255,.1); padding: 22px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: .85rem; }
 
+/* A hónap sportolója */
+.section--tight { padding-bottom: 0; }
+.motm { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+.motm__img img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); transition: transform .3s; }
+.motm__img:hover img { transform: scale(1.02); }
+
 /* Animáció */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -178,7 +184,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brand-accen
   .grid--4, .stats { grid-template-columns: repeat(2, 1fr); }
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .split { grid-template-columns: 1fr; gap: 36px; }
+  .split, .motm { grid-template-columns: 1fr; gap: 36px; }
   .nav-toggle { display: block; }
   .nav { position: fixed; inset: 76px 0 0 0; background: #fff; padding: 20px; overflow-y: auto; transform: translateX(100%); visibility: hidden; transition: transform .3s, visibility .3s; }
   .nav.is-open { transform: none; visibility: visible; }
